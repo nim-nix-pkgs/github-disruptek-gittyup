@@ -1,8 +1,0 @@
-{
-  "description": "higher-level libgit2 bindings",
-  "license": "MIT",
-  "name": "github-disruptek-gittyup",
-  "ref": "refs/tags/2.5.3",
-  "url": "https://github.com/disruptek/gittyup",
-  "version": "2_5_3"
-}
