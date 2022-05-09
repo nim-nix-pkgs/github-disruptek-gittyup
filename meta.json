@@ -6,7 +6,7 @@
   "tags": [],
   "url": "https://github.com/disruptek/gittyup",
   "refs": [
-    "fatal: unable to access 'https://github.com/disruptek/gittyup/': Could not resolve host: github.com",
+    "fatal: unable to access 'https://github.com/disruptek/gittyup/': Failed to connect to github.com port 443 after 131934 ms: Connection timed out",
     ""
   ],
   "heads": []
