@@ -2743,7 +2743,7 @@
   "heads": [
     {
       "name": "gittyup",
-      "version": "3.1.0",
+      "version": "3.2.1",
       "author": "disruptek",
       "desc": "higher-level libgit2 bindings",
       "license": "MIT",
