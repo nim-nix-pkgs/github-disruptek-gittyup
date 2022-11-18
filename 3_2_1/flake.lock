@@ -540,7 +540,7 @@
         "github-disruptek-balls": "github-disruptek-balls_2",
         "github-haxscramper-hlibgit2": "github-haxscramper-hlibgit2",
         "nixpkgs": "nixpkgs_2",
-        "src-gittyup-master": "src-gittyup-master"
+        "src-gittyup-3_2_1": "src-gittyup-3_2_1"
       }
     },
     "src-badresults-2_1_4": {
@@ -594,7 +594,7 @@
         "type": "github"
       }
     },
-    "src-gittyup-master": {
+    "src-gittyup-3_2_1": {
       "flake": false,
       "locked": {
         "lastModified": 1667830406,
@@ -606,7 +606,7 @@
       },
       "original": {
         "owner": "disruptek",
-        "ref": "refs/heads/master",
+        "ref": "refs/tags/3.2.1",
         "repo": "gittyup",
         "type": "github"
       }
