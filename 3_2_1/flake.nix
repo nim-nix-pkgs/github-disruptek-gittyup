@@ -1,5 +1,5 @@
 {
-  description = ''higher-level libgit2 bindings that build upon nimgit2'';
+  description = ''higher-level libgit2 bindings'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -7,11 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-gittyup-3_0_0.flake = false;
-  inputs.src-gittyup-3_0_0.ref   = "refs/tags/3.0.0";
-  inputs.src-gittyup-3_0_0.owner = "disruptek";
-  inputs.src-gittyup-3_0_0.repo  = "gittyup";
-  inputs.src-gittyup-3_0_0.type  = "github";
+  inputs.src-gittyup-3_2_1.flake = false;
+  inputs.src-gittyup-3_2_1.ref   = "refs/tags/3.2.1";
+  inputs.src-gittyup-3_2_1.owner = "disruptek";
+  inputs.src-gittyup-3_2_1.repo  = "gittyup";
+  inputs.src-gittyup-3_2_1.type  = "github";
   
   inputs."github-disruptek-badresults".owner = "nim-nix-pkgs";
   inputs."github-disruptek-badresults".ref   = "master";
@@ -40,13 +40,13 @@
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-gittyup-3_0_0"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-gittyup-3_2_1"];
     over = if builtins.pathExists ./override.nix 
            then { override = import ./override.nix; }
            else { };
   in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-gittyup-3_0_0";
+    src  = deps."src-gittyup-3_2_1";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   } );
